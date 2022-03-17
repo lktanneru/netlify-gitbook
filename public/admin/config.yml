@@ -1,0 +1,20 @@
+backend:
+  name: github
+  repo: lktanneru/netlify
+  branch: main
+
+local_backend: true
+media_folder: static/img
+public_folder: /img
+
+
+collections:
+  - name: "content"
+    label: "Blog"
+    folder: "content"
+    create: true
+    slug: "index"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: 'Sub Title', name: 'metatitle', widget: 'string' }
+      - {label: "Description", name: "metadescription", widget: "markdown"}
